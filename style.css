@@ -1,0 +1,497 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height:300px;
+    width: 100%;
+    border-bottom: silver 0.5px solid;
+    
+}
+h2{
+    margin-top: 10px;
+    display: flex;
+    padding: 0px 21px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    
+    
+
+}
+.button{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 57px;
+    padding: 8px 0px 0px 0px;    
+}
+
+.button button{
+    display: flex;
+    padding: 5px 2%;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    border: rgb(247, 232, 232) 0.5px solid;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 13px;
+    font-family: inherit;
+    margin: 0px 32px 0px 29px;
+    cursor: pointer;
+
+    
+}
+.fa-solid {
+    /* display: flex;
+    justify-items: center; */
+    /* border: 2px solid red; */
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+.navbar {
+    margin-right: 5px;
+    display: flex;
+    max-width: 70rem;
+    justify-content: space-around;
+        text-decoration: none;
+
+}
+.header{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(45px);
+}
+
+.header .navbar{    
+    /* margin-top: 15px; */
+    display: flex;
+    /* border: 2px solid black; */
+    width: 1291px;
+    height: 50px;
+    max-width: 100%;
+    padding: 5px 0px;
+    /* margin-left: -42px; */
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600 ;
+    color: #000;
+     line-height: 21px;
+     align-items: center;
+     transition: 0.3s ease-in-out all;
+     text-transform: uppercase;
+     
+
+}
+nav a:hover{
+    text-decoration: underline 2px solid black;
+}
+/* YEAH DROPDOWN WHAT'S NEW KA HAI */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+/* Style for the dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* YEAH DROPDOWN IPHONE WALE  KA HAI */
+.dropdown-iphone {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Style for the dropdown menu */
+.dropdown-iphone-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-iphone-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-iphone-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown-iphone:hover .dropdown-content {
+    display: block;
+}
+/* YEAH DROPDOWN IPAD WALE  KA HAI */
+.dropdown-ipad {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Style for the dropdown menu */
+.dropdown-ipad-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-ipad-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-ipad-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown-ipad:hover .dropdown-content {
+    display: block;
+}
+/* YEAH DROPDOWN APPLE WATCH WALE  KA HAI */
+.dropdown-apple-watch {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Style for the dropdown menu */
+.dropdown-apple-watch-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-apple-watch-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-apple-watch-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown-apple-watch:hover .dropdown-content {
+    display: block;
+}
+/* YEAH DROPDOWN AIRPODS WALE  KA HAI */
+.dropdown-airpods {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Style for the dropdown menu */
+.dropdown-airpods-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-airpods-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-airpods-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown-airpods:hover .dropdown-content {
+    display: block;
+}
+/* YEAH DROPDOWN MAC LAPTOP WALE  KA HAI */
+.dropdown-mac {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Style for the dropdown menu */
+.dropdown-mac-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-mac-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-mac-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown-mac:hover .dropdown-content {
+    display: block;
+}
+/* YEAH DROPDOWN MORE OPYIONS  WALE  KA HAI */
+.dropdown-more {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Style for the dropdown menu */
+.dropdown-more-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Dropdown links */
+.dropdown-more-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease in-out all;
+}
+
+.dropdown-more-content a:hover {
+    background-color:rgb(252, 253, 253);;
+    border: 3.5px solid rgb(20, 103, 124);
+}
+
+/* Show dropdown on hover */
+.dropdown-more:hover .dropdown-content {
+    display: block;
+}
+.underline{
+    border: 0px 0px 4px 0px solid darkgrey;
+}
+.iphone-banner{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 750px;
+    cursor: pointer;
+}
+.iphone-banner .banner{
+    height: 728px;
+    width: 727.5px;
+    margin: 21px 15px 15px 21px;
+}
+.banner{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 700px;
+    /* transition: 0.3s ease-in-out all; */
+    cursor: pointer;
+    transition: background-color 0.3s ease ease-in-out;
+    background-color: grey;
+}
+.banner:hover{
+    background-color:rgb(144, 24, 24);
+    /* border: 2px solid rgb(231, 219, 219); */
+}
+.iphone-banner .phone{
+    height: 585px;
+    width: 468px;
+    margin: 69px 15px 15px 133px;
+}
+.phone{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 700px;
+    /* transition: 0.3s ease-in-out all; */
+    cursor: pointer;
+    transition: background-color 0.3s ease ease-in-out;
+    background-color: grey;
+}
+.phone:hover{
+    background-color:rgb(144, 24, 24);
+    /* border: 2px solid rgb(231, 219, 219); */
+}
+.quick-view{
+    display: flex;
+    margin-top: auto;
+    /* border: 2px red solid ; */
+    margin-block-start: auto;
+    margin-left: -291px;
+    font-size: 23px;
+    cursor:pointer;
+    font-weight: 600;
+}
+.share-button{
+    display:flex;
+    justify-content: center;
+    padding: 60px 0px 0px 0px;
+}
+.share-button button{
+        display: flex ;
+        height: 47px;
+        width: 100%;
+        padding: 13px 108px;
+        background-color: #fff;
+        border-radius: .8rem;
+        border: 1px solid #d5d9d9;
+        box-shadow: 0 2px 5px 0 rgba(213, 217, 217, .5);
+        cursor: pointer;
+        max-width: 280px;
+        text-align: center;
+        font-size: 18px;
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 84px 0px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.back-top{
+    display: flex;
+    justify-content: center;    
+    margin: 21px 0px 0px 0px;
+    height: 45px;
+    width: 100%;
+    background-color: #232f3e;
+    text-align: center;
+    justify-content: center;
+}
+.back-top button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 16px 0px 0px 0px;
+}
+.footer-content{
+    display: flex;
+    font-size: 14px;
+    margin: 14px 0px 30px 270px;
+    /* margin-right: 77px; */
+    color: #0000008F
+}
+.footer-content a{
+    padding:0px 2px 0px 2px;
+    color:#0066cc;
+    font-size: 14px;
+}
+hr{
+    display: flex;
+    margin:0px 8px 2px 8px ;
+    color:rgb(128, 124, 124);
+    
+}
+.hr{
+    margin-left: 260px;
+    width: 60%;
+}
+.copyrigth{
+    display: flex;
+    font-size: 15px;
+    color: #0000008F;
+    margin: 20px 0px 15px 5px ;
+}
+.copyrigth a{
+    display: flex;
+    padding: 0px 0px 0px 14px;
+    color: #0000008F;
+    font-size: 14px;
+    text-decoration: none;
+}
+.india{
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+
+
+}
+.india a{
+    text-decoration: none;
+}
